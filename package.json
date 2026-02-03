@@ -1,0 +1,32 @@
+{
+  "name": "pos-system-backend",
+  "version": "1.0.0",
+  "description": "Production-ready PoS backend with offline-first queue and multi-tenant invoice system",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["pos", "point-of-sale", "invoice", "offline-first", "queue", "multi-tenant"],
+  "author": "hooperits",
+  "license": "MIT",
+  "dependencies": {
+    "bullmq": "^5.12.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.0",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/ws": "^8.5.12",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.0"
+  }
+}
